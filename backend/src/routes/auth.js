@@ -129,19 +129,19 @@ res.json({
     }
   }
 });
-```
+
 
 } catch (error) {
 console.error('[LOGIN ERROR]', error);
 console.error('[LOGIN ERROR MESSAGE]', error.message);
 console.error('[LOGIN ERROR STACK]', error.stack);
 
-```
+
 res.status(500).json({
   error: 'Internal Server Error',
   message: error.message
 });
-```
+
 
 }
 });
